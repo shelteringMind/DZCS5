@@ -5,7 +5,7 @@
 int[] RandArray(int size)
 {
     int[] array = new int[size];
-    for(int i=0;i<size;i++) {
+    for(int i = 0; i < size; i++) {
         array[i] = new Random().Next(100,1000);
     }
     return array;
@@ -39,7 +39,7 @@ zadacha1();
 int[] RandArray(int size, int min, int max)
 {
     int[] array = new int[size];
-    for(int i=0;i<size;i++) {
+    for(int i = 0; i < size; i++) {
         array[i] = new Random().Next(min,max);
     }
     return array;
@@ -48,7 +48,7 @@ int[] RandArray(int size, int min, int max)
 int NotParityIndexSum(int[] array)
 {
     int sum = 0;
-    for(int i = 0; i < array.Length ; i++) {
+    for(int i = 0; i < array.Length; i++) {
         sum += i % 2 != 0 ? array[i] : 0;
     }
     return sum;
@@ -71,7 +71,7 @@ void zadacha2()
 zadacha2();
 //*/
 
-//*/
+/*/
 //Задача 3: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементами массива.
 
 double[] RandArray(int size, int min, int max)
